@@ -15,7 +15,17 @@ app.post('/', async (req, res) => {
         log.info("Config=" + JSON.stringify(req.body.cfg));
         log.info("Snapshot=" + JSON.stringify(req.body.snapshot));
         
-        let {data} = req.body;
+        const {data} = req.body;
+        const {cfg} = req.body;
+        
+        if (!data) {
+            res.status(401).json('Error missing data property');
+            return;
+        }
+        if (!cfg) {
+            res.status(401).json('Error missing cfg property');
+            return;
+        }
         
         if (Array.isArray(data)) {
 			if (data.length > 0) {
