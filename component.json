@@ -1,0 +1,14 @@
+{
+	"title": "OIH Request Handler",
+	"description": "OIH request handler to manage data splitting",
+	"version": "0.0.1",
+	"docsUrl": "https://github.com/bjafet123/requestHandler/blob/main/README.md",
+	"buildType": "docker",
+	"credentials": {},
+	"triggers": {
+		"requestHandler": {
+			"title": "Execute query through a MySQL connection.",
+			"main": "./lib/triggers/requestHandler.js"
+		}
+	}
+}
