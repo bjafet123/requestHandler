@@ -1,6 +1,6 @@
 {
 	"name": "newproject2",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "A request handler to split data",
 	"main": "index.js",
 	"directories": {
@@ -10,6 +10,10 @@
 	"scripts": {
 		"test": "node test/test.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bjafet123/requestHandler.git"
+	},
 	"keywords": [
 		"nodejs",
 		"OIH",
@@ -17,6 +21,10 @@
 	],
 	"author": "Jafet Malvaez Lopez",
 	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bjafet123/requestHandler/issues"
+	},
+	"homepage": "https://github.com/bjafet123/requestHandler#readme",
 	"dependencies": {
 		"@openintegrationhub/ferryman": "^2.1.0",
 		"@openintegrationhub/ferryman-1-7": "npm:@openintegrationhub/ferryman@^1.7.1",
