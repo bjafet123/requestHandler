@@ -3,9 +3,11 @@ const log = require('../helpers/logger');
 const rabbitmq = require('../helpers/rabbit');
 const express = require('express');
 const app = express();
-app.use(express.json());
+
 
 const PORT = process.env.PORT || 5000;
+
+app.use(express.json());
 
 app.post('/', async (req, res) => {
 	try {
@@ -48,4 +50,4 @@ app.post('/', async (req, res) => {
 });
 
 
-app.listen(PORT, () => console.log('Service up in port', PORT));
+app.listen(PORT, () => log.info('Service up in port', PORT));
